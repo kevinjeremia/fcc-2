@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>FCC: Survey Form</title>
+</head>
+<body>
+    <div class="container"> 
+        <header class="header">
+            <h1 class="text title">
+                freeCodeCamp Survey Form
+            </h1>
+            <p class="text desc">
+                Thank you for taking the time to help us improve the platform
+            </p>
+        </header>    
+        <form id="form">
+            <div class="form-group">
+                <label class="name-label" for="name">
+                    Name
+                </label>
+                <input type="text" name="name" class="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label class="email-label" for="email">
+                    Email
+                </label>
+                <input type="email" name="email" class="email" placeholder="Enter your Email" required>
+            </div>
+            <div class="form-group">
+                <label class="age-label" for="age">
+                    Age <span class="clue">(optional)</span>
+                </label>
+                <input class="age" type= min="0" name="age" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <label class="role-label" for="role">
+                    Which option best describes your current role?
+                </label>
+                <select class="role" name="role" required>
+                    <option disabled selected value>
+                        Select current role
+                    </option>
+                    <option value="student">
+                        Student
+                    </option>
+                    <option value="job">
+                        Full Time Job
+                    </option>
+                    <option value="learner">
+                        Full Time Learner
+                    </option>
+                    <option value="preferNo">
+                        Prefer not to say
+                    </option>
+                    <option value="other">
+                        Other
+                    </option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p class="rec-label">
+                    Would you recommend freeCodeCamp to a friend?
+                </p>
+                <label for="definitely">
+                    <input class="rec" value="definitely" type="radio" checked>
+                    Definitely
+                </label>
+                <label for="maybe">
+                    <input class="rec" value="maybe" type="radio">
+                    Maybe
+                </label>
+                <label for="not-sure">
+                    <input class="rec" value="notSure" type="radio">
+                    Not sure
+                </label> 
+            </div>
+            <div class="form-group">
+                <p>
+                    What is your favorite feature of freeCodeCamp?
+                </p>
+                <select class="fav-feature" name="fav-feature">
+                    <option disabled selected value>
+                        Select an option
+                    </option>
+                    <option value="challenges">
+                        Challenges
+                    </option>
+                    <option values="projects">
+                        Projects
+                    </option>
+                    <option values="community">
+                        Community
+                    </option>
+                    <option values="opensource">
+                        Open Source
+                    </option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>
+                    What would you like to see improved? <span class="clue">(Check all that apply)</span>
+                </p>
+                <label>
+                    <input class="input-checkbox" name="prefer" value="front-end-projects" type="checkbox">
+                    Front-end Projects
+                </label>
+                <label>
+                    <input class="input-checkbox" name="prefer" value="back-end-projects" type="checkbox">
+                    Back-end Projects
+                </label>
+                <label>
+                    <input class="input-checkbox" name="prefer" value="front-end-projects" type="checkbox">
+                    Data Visualization
+                </label>
+            </div>
+            <div class="form-group">
+                <p>
+                    Any comments or suggestions?
+                </p>
+                <textarea placeholder="Enter your comment here..." name="comment" class="input-textarea" style="margin-top: 0px; margin-bottom: 0px; height: 120px;">
+
+                </textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit-buton">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
